@@ -23,7 +23,6 @@ const renderReadReciepts = (message,isMyMessage)=>{
 
 const renderMessages =() =>{
     const keys =Object.keys(messages);
-    //console.log(keys);
     return keys.map((key, index) => {
         const message =messages[key];
         const lastMessageKey = index === 0 ? null : keys[index-1]; 
